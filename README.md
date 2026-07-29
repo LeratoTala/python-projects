@@ -1,8 +1,14 @@
-# Student Info Formatter
+# Python String Tools
 
-A Python script that collects personal information from the user and displays it in a formatted profile card.
+A collection of Python scripts demonstrating string manipulation, data types, and f-string formatting.
 
-## What it does
+---
+
+## Student Info Formatter (`string_formatter.py`)
+
+Collects personal information from the user and displays it in a formatted profile card.
+
+### What it does
 
 Prompts the user for:
 - First name and surname
@@ -16,15 +22,14 @@ Then outputs a profile card showing:
 - Whether the user is an adult (18+)
 - Data types of each collected value
 
-## Concepts demonstrated
+### Concepts demonstrated
 
 - Core data types: `str`, `int`, `float`, `bool`
 - String manipulation and f-string formatting
 - Arithmetic operations
-- Rounding
-- Boolean expressions
+- Rounding and boolean expressions
 
-## Usage
+### Usage
 
 ```bash
 python string_formatter.py
@@ -50,4 +55,36 @@ surname -> <class 'str'>
 age -> <class 'int'>
 favourite_number -> <class 'float'>
 is_adult -> <class 'bool'>
+```
+
+---
+
+## Secure Password Hint Tool (`secure_password.py`)
+
+Takes a user's password and generates a hint showing only the first and last letters in uppercase.
+
+### What it does
+
+- Prompts the user to enter a secret password
+- Strips accidental leading/trailing spaces with `.strip()`
+- Extracts the first and last characters using string indexing
+- Displays a hint with both letters forced to uppercase
+
+### Concepts demonstrated
+
+- String input and `.strip()`
+- String indexing (`[0]` and `[-1]`)
+- `.upper()` and f-string formatting
+
+### Usage
+
+```bash
+python secure_password.py
+```
+
+Example output:
+
+```
+Enter your secret password: hello
+Your password hint: It starts with H and ends with O
 ```
